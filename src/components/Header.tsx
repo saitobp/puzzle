@@ -6,7 +6,7 @@ export function Header() {
       <div className='flex w-full items-center justify-between px-4 md:max-w-6xl'>
         <div className='flex items-center'>
           <img src='/logo.svg' alt='logo' className='h-14' />
-          <h1 className='text-white text-xl font-bold uppercase'>Puzzle</h1>
+          <h1 className='text-xl font-bold uppercase text-white'>Puzzle</h1>
         </div>
 
         <Button>Contato</Button>
