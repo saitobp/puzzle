@@ -1,4 +1,4 @@
-import { Header } from '@/components/Header'
+import { Home } from '@/Home'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
@@ -8,6 +8,6 @@ const root = createRoot(element)
 
 root.render(
   <StrictMode>
-    <Header />
+    <Home />
   </StrictMode>,
 )

@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.section-background {
+  background-image: url('/public/section-background.svg');
+}
