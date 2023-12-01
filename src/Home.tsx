@@ -34,7 +34,7 @@ export function Home() {
               mesmo uma avaliação gratuita.
             </h2>
 
-            <Button className='mt-4'>Entre em Contato Agora!</Button>
+            <Button className='mt-4 shadow-bttn-md hover:shadow-bttn-hover pt-4 pb-8'>Entre em Contato Agora!</Button>
           </div>
         </Container>
       </section>

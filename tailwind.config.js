@@ -14,6 +14,10 @@ export default {
       fontFamily: {
         sans: ['"Public Sans"', 'sans-serif'],
       },
+      boxShadow: {
+        'bttn-hover': '-5px 5px 0px 0px rgb(184 0 64)',
+        'bttn-md': '-5px 5px 0px 0px rgb(245 0 87)',
+      },
     },
   },
   plugins: [],
