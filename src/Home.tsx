@@ -2,6 +2,7 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import { HeadingText } from '@/components/HeadingText'
+import { Input } from '@/components/Input'
 
 export function Home() {
   return (
@@ -77,7 +78,7 @@ export function Home() {
         </Container>
       </section>
 
-      <section className='section-background mb-8 flex items-center justify-center bg-beige'>
+      <section className='section-background mb-8 flex items-center justify-center bg-beige pb-8'>
         <Container className='py-4'>
           <HeadingText
             className='text-center'
@@ -97,7 +98,7 @@ export function Home() {
                 iconBgColor='dark-blue'
                 noShadow
                 direction='row'
-                className='h-48 min-h-[180px] md:h-[200px] md:min-h-[180px]'
+                className='h-[264px] min-h-[180px] md:h-[200px] md:min-h-[180px]'
               />
 
               <Card
@@ -109,7 +110,7 @@ export function Home() {
                 iconBgColor='dark-blue'
                 noShadow
                 direction='row'
-                className='h-48 min-h-[180px] md:h-[200px] md:min-h-[180px]'
+                className='h-[264px] min-h-[180px] md:h-[200px] md:min-h-[180px]'
               />
 
               <Card
@@ -121,10 +122,65 @@ export function Home() {
                 iconBgColor='dark-blue'
                 noShadow
                 direction='row'
-                className='h-48 min-h-[180px] md:h-[200px] md:min-h-[180px]'
+                className='h-[264px] min-h-[180px] md:h-[200px] md:min-h-[180px]'
               />
             </div>
           </div>
+        </Container>
+      </section>
+
+      <section className='mb-8 flex w-full flex-col items-center justify-center'>
+        <Container className='relative flex w-full flex-col items-center justify-between'>
+          <img
+            src='/logo-piece-pink.svg'
+            alt='Logo piece pink'
+            className='absolute right-2 top-[-72px] hidden h-[200px] md:block'
+          />
+
+          <img
+            src='/logo-piece-blue.svg'
+            alt='Logo piece blue'
+            className='absolute bottom-[-128px] left-0 hidden h-[200px] md:block'
+          />
+
+          <HeadingText
+            className='max-w-md text-center'
+            text='Envie-nos uma **mensagem** e descubra como podemos tornar sua **experiência** ainda **melhor!**'
+          />
+
+          <form
+            className='mt-4 grid w-full grid-cols-3 gap-4 px-2 md:max-w-lg md:grid-cols-4'
+            onSubmit={(e) => e.preventDefault()}
+          >
+            <Input
+              type='text'
+              placeholder='Nome'
+              className='col-span-3 md:col-span-2'
+            />
+
+            <Input
+              type='number'
+              placeholder='Telefone'
+              className='col-span-3 md:col-span-2'
+            />
+
+            <Input
+              type='email'
+              placeholder='Email'
+              className='col-span-3 md:col-span-4'
+            />
+
+            <Input
+              type='text'
+              placeholder='Mensagem'
+              className='col-span-3 md:col-span-4'
+              textArea
+            />
+
+            <Button className='col-span-4' variant='filled-blue'>
+              Transforme sua empresa agora!
+            </Button>
+          </form>
         </Container>
       </section>
     </>
