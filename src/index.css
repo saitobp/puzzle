@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .section-background {
-  background-image: url('/public/section-background.svg');
+  background-image: url('/section-background.svg');
 }
