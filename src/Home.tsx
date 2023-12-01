@@ -1,4 +1,3 @@
-import { AccentText } from '@/components/AccentText'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
@@ -23,11 +22,10 @@ export function Home() {
           <img src='/logo.svg' alt='big logo' className='h-64' />
 
           <div className='flex flex-col gap-4 md:block'>
-            <HeadingText>
-              Conectamos <AccentText>ideias</AccentText> e criamos{' '}
-              <AccentText>soluções</AccentText>, com nosso time todo projeto é
-              uma história de <AccentText>sucesso.</AccentText>
-            </HeadingText>
+            <HeadingText
+              text='Conectamos **ideias** e criamos **soluções**, com nosso time todo projeto é
+              uma história de **sucesso.**'
+            />
 
             <h2 className='text-xl font-bold'>
               Leve sua empresa para a era digital com excelência. Agende agora
@@ -39,13 +37,12 @@ export function Home() {
         </Container>
       </section>
 
-      <section className='flex w-full justify-center'>
+      <section className='mb-8 flex w-full justify-center'>
         <Container className='flex w-full flex-col items-center justify-between'>
-          <HeadingText className='text-center'>
-            A <AccentText>peça</AccentText> que está faltando para o{' '}
-            <AccentText>sucesso</AccentText> do seu{' '}
-            <AccentText>negócio!</AccentText>
-          </HeadingText>
+          <HeadingText
+            className='text-center'
+            text='A **peça** que está faltando para o **sucesso** do seu **negócio!**'
+          />
 
           <div className='mt-8 flex w-full flex-col justify-between gap-8 md:flex-row'>
             <Card
@@ -69,6 +66,15 @@ export function Home() {
               image='/puzzle-piece-pink-3.svg'
             />
           </div>
+        </Container>
+      </section>
+
+      <section className='section-background mb-8 flex  w-full items-center justify-center bg-beige'>
+        <Container className='py-4'>
+          <HeadingText
+            className='text-center'
+            text='Entenda a **essência** por trás da empresa.'
+          />
         </Container>
       </section>
     </>
