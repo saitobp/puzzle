@@ -17,6 +17,7 @@ export default {
       boxShadow: {
         'btn-hover': '-5px 5px 0px 0px rgb(184 0 64)',
         'btn-md': '-5px 5px 0px 0px rgb(245 0 87)',
+        'dark-blue': '-5px 5px 0px 0px #0888a8',
       },
     },
   },
