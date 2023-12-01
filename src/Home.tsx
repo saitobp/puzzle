@@ -97,7 +97,7 @@ export function Home() {
                 iconBgColor='dark-blue'
                 noShadow
                 direction='row'
-                className='md:h-48 md:min-h-[180px]'
+                className='h-48 min-h-[180px] md:h-[200px] md:min-h-[180px]'
               />
 
               <Card
@@ -109,7 +109,7 @@ export function Home() {
                 iconBgColor='dark-blue'
                 noShadow
                 direction='row'
-                className='md:h-48 md:min-h-[180px]'
+                className='h-48 min-h-[180px] md:h-[200px] md:min-h-[180px]'
               />
 
               <Card
@@ -121,7 +121,7 @@ export function Home() {
                 iconBgColor='dark-blue'
                 noShadow
                 direction='row'
-                className='md:h-48 md:min-h-[180px]'
+                className='h-48 min-h-[180px] md:h-[200px] md:min-h-[180px]'
               />
             </div>
           </div>
