@@ -1,24 +1,62 @@
+import { clsx } from 'clsx'
+
 type CardProps = {
   title: string
   description: string
   image: string
   alt: string
+  bgColor: 'beige' | 'white'
+  iconBgColor: 'white' | 'dark-blue'
+  noShadow?: boolean
+  direction?: 'row' | 'column'
+  className?: string
 }
 
 export function Card(props: CardProps) {
   return (
-    <div className='h-64 w-full rounded-md bg-beige p-4 shadow-md md:h-80'>
-      <div className='mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md'>
+    <div
+      className={clsx(
+        props.className,
+        'min-h-[256px] w-full rounded-md bg-beige p-4 md:h-80',
+        {
+          'bg-beige': props.bgColor === 'beige',
+          'bg-white': props.bgColor === 'white',
+          'shadow-md': !props.noShadow,
+          'flex flex-row justify-center gap-4': props.direction === 'row',
+        },
+      )}
+    >
+      <div
+        className={clsx(
+          'mb-4 flex h-[48px] w-[48px] min-w-[48px] items-center justify-center rounded-full shadow-md',
+          {
+            'bg-white': props.iconBgColor === 'white',
+            'bg-dark-blue': props.iconBgColor === 'dark-blue',
+          },
+        )}
+      >
         <img src={props.image} alt={props.alt} className='h-[16px]' />
       </div>
 
-      <h2 className='mb-4 text-center text-2xl font-bold text-black'>
-        {props.title}
-      </h2>
+      <div>
+        <h2
+          className={clsx('mb-4 text-2xl font-bold text-black', {
+            'text-left': props.direction === 'row',
+            'text-center': props.direction === 'column' || !props.direction,
+          })}
+        >
+          {props.title}
+        </h2>
 
-      <p className='text-md h-36 text-center font-normal text-black'>
-        {props.description}
-      </p>
+        <p
+          className={clsx('text-md font-normal text-black', {
+            'text-left': props.direction === 'row',
+            'text-center': props.direction === 'column' || !props.direction,
+          })}
+        >
+          {props.description}
+        </p>
+      </div>
     </div>
   )
 }
