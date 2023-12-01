@@ -9,7 +9,7 @@ export function Home() {
     <>
       <header className='flex h-16 w-full justify-center bg-bright-pink'>
         <Container className='flex w-full items-center justify-between'>
-          <div className='flex items-center'>
+          <div className='flex items-center justify-between'>
             <img src='/logo.svg' alt='logo' className='h-14' />
             <h1 className='text-xl font-bold uppercase text-white'>Puzzle</h1>
           </div>
@@ -18,9 +18,11 @@ export function Home() {
         </Container>
       </header>
 
-      <section className='section-background mb-8 flex h-96 w-full items-center justify-center bg-beige'>
-        <Container className='flex w-full items-center justify-between'>
-          <div className='max-w-lg'>
+      <section className='section-background mb-8 flex  w-full items-center justify-center bg-beige'>
+        <Container className='flex w-full flex-col justify-between py-4 md:flex-row-reverse md:py-8'>
+          <img src='/logo.svg' alt='big logo' className='h-64' />
+
+          <div className='flex flex-col gap-4 md:block'>
             <HeadingText>
               Conectamos <AccentText>ideias</AccentText> e criamos{' '}
               <AccentText>soluções</AccentText>, com nosso time todo projeto é
@@ -34,8 +36,6 @@ export function Home() {
 
             <Button className='mt-4'>Entre em Contato Agora!</Button>
           </div>
-
-          <img src='/logo.svg' alt='big logo' className='h-72' />
         </Container>
       </section>
 
@@ -47,7 +47,7 @@ export function Home() {
             <AccentText>negócio!</AccentText>
           </HeadingText>
 
-          <div className='mt-8 flex w-full justify-between'>
+          <div className='mt-8 flex w-full flex-col justify-between gap-8 md:flex-row'>
             <Card
               title='Tenha presença online.'
               alt='Puzzle piece 1'
