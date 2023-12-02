@@ -33,7 +33,7 @@ export function Home() {
               mesmo uma avaliação gratuita.
             </h2>
 
-            <Button className='shadow-btn-md hover:shadow-btn-hover mt-4 pb-8 pt-4'>
+            <Button className='mt-4 pb-8 pt-4 shadow-btn-md hover:shadow-btn-hover'>
               Entre em Contato Agora!
             </Button>
           </div>
@@ -182,6 +182,27 @@ export function Home() {
             </Button>
           </form>
         </Container>
+      </section>
+
+      <section className='section-background  flex items-center justify-center bg-beige pt-16'>
+        <div className='flex w-full justify-center bg-bright-pink py-4'>
+          <Container className='w-full text-sm text-white'>
+            <div className='mb-2 w-full'>
+              <strong>Endereço</strong>
+              <p>Foz do Iguaçu, Paraná</p>
+            </div>
+
+            <div className='mb-2 w-full'>
+              <strong>Email</strong>
+              <p>contact@mail.com</p>
+            </div>
+
+            <div className='w-full'>
+              <strong>Telefone</strong>
+              <p>+55 (45) 9 9999-9999</p>
+            </div>
+          </Container>
+        </div>
       </section>
     </>
   )
